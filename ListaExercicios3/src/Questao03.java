@@ -1,5 +1,3 @@
-package listaExercicios3;
-
 import java.util.Scanner;
 
 public class Questao03 {
