@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Questao10 {
+public class Questao_10 {
     public static void main(String[] args) {
 
         double salarioBruto;

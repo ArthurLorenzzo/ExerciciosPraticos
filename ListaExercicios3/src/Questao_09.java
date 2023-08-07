@@ -2,7 +2,7 @@ package lista_3;
 
 import java.util.Scanner;
 
-public class Questao_9 {
+public class Questao_09 {
 	//Verifique se o usuário é maior de idade ou não.
 
 	public static void main(String[] args) {
