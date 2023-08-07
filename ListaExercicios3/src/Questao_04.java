@@ -2,7 +2,7 @@ package lista_3;
 
 import java.util.Scanner;
 
-public class Questao_4 {
+public class Questao_04 {
 	//Determine e exiba a média aritmética de um aluno a partir de suas 4 notas.
 
 	public static void main(String[] args) {
