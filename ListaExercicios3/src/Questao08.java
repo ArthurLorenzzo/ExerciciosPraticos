@@ -18,5 +18,6 @@ public class Questao08 {
             double result = (double) numerator / denominator;
             System.out.println("The real number is: " + result);
         }
+        sc.close();
     }
 }

@@ -27,5 +27,6 @@ public class Questao12 {
         else {
             System.out.println("Failed!");
         }
+        sc.close();
     }
 }
