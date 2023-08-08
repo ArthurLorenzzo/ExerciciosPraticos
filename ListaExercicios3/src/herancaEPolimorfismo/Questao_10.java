@@ -3,9 +3,9 @@ package herancaEPolimorfismo;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Questao_07 {
-
-    public static void main(String[] args) {
+public class Questao_10 {
+	
+	public static void main(String[] args) {
 
 
         List<Funcionario> funcionarios = new ArrayList<>();
@@ -18,6 +18,16 @@ public class Questao_07 {
                 funcionarios.add(new FuncionarioNivelMedio(("funcionario"+ i) , ""+i,"Escola "+ i));
             }else {
                 funcionarios.add(new FuncionarioNivelSuperior("funcionario"+ i , ""+i,"Escola "+ i, "Universidade"));
+            }
+        }
+        
+        for (int i = 1; i < funcionarios.size(); i++) {
+            if(i<=1){
+                funcionarios.get(i-1).setCargo(ECargos.GERENTE);
+            }else if (i<=3){
+            	funcionarios.get(i-1).setCargo(ECargos.SUPERVISOR);;
+            }else {
+            	funcionarios.get(i-1).setCargo(ECargos.VENDEDOR);;
             }
         }
 
@@ -46,4 +56,5 @@ public class Questao_07 {
 
 
     }
+
 }

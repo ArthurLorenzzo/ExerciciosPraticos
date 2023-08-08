@@ -18,6 +18,10 @@ public class Funcionario {
         this.nome = nome;
         this.codigoFuncional = codigoFuncional;
         this.cargo = cargo;
+        atualizaRendaTotal();
+    }
+
+    protected void atualizaRendaTotal() {
         if (cargo == ECargos.GERENTE){
             aumentoSalarialPorCargo = 1500;
         }else if(cargo == ECargos.SUPERVISOR){
@@ -25,10 +29,6 @@ public class Funcionario {
         } else if (cargo == ECargos.VENDEDOR) {
             aumentoSalarialPorCargo = 250;
         }
-        atualizaRendaTotal();
-    }
-
-    protected void atualizaRendaTotal() {
         this.rendaTotal = rendaBasica + aumentoSalarialPorCargo + aumentoSalarialPorNivel;
     }
 
@@ -67,6 +67,11 @@ public class Funcionario {
     protected void setAumentoSalarialPorNivel(double aumentoSalarialPorNivel) {
         this.aumentoSalarialPorNivel = aumentoSalarialPorNivel;
     }
-
+	@Override
+	public String toString() {
+		return "Funcionario [nome=" + nome + ", aumentoSalarialPorCargo=" + aumentoSalarialPorCargo + ", rendaTotal="
+				+ rendaTotal + "]";
+	}
+    
 
 }
