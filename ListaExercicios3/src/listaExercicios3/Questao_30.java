@@ -7,24 +7,23 @@ public class Questao_30 {
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("Informe as coordenadas do primeiro retângulo:");
-        System.out.print("listaExercicios3.Ponto 1 (x y): ");
+        System.out.print("Ponto 1 (x y): ");
         double x1 = scanner.nextDouble();
         double y1 = scanner.nextDouble();
-        System.out.print("listaExercicios3.Ponto 2 (x y): ");
+        System.out.print("Ponto 2 (x y): ");
         double x2 = scanner.nextDouble();
         double y2 = scanner.nextDouble();
         Retangulo retangulo1 = new Retangulo(new Ponto(x1, y1), new Ponto(x2, y2));
 
         System.out.println("Informe as coordenadas do segundo retângulo:");
-        System.out.print("listaExercicios3.Ponto 1 (x y): ");
+        System.out.print("Ponto 1 (x y): ");
         double x3 = scanner.nextDouble();
         double y3 = scanner.nextDouble();
-        System.out.print("listaExercicios3.Ponto 2 (x y): ");
+        System.out.print("Ponto 2 (x y): ");
         double x4 = scanner.nextDouble();
         double y4 = scanner.nextDouble();
         Retangulo retangulo2 = new Retangulo(new Ponto(x3, y3), new Ponto(x4, y4));
 
-        scanner.close();
 
         if (retangulo1.verificarSeIntercepta(retangulo2)) {
             System.out.println("Os retângulos se interceptam.");
