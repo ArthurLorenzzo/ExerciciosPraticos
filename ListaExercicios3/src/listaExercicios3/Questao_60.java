@@ -21,7 +21,7 @@ public class Questao_60 {
             for (int mes = 0; mes < 12; mes++) {
                 if (ano == 0 && mes == 0) {
                     tabelaEvolucao[ano][mes] = valorDivida;
-                } else if (ano != 0  && mes == 0 ) {
+                } else if (ano != 0 && mes == 0) {
                     double valorCorrigidoMesAnterior = tabelaEvolucao[(ano - 1)][11];
                     double valorCorrigido = valorCorrigidoMesAnterior * (1 + taxaCorrecao);
                     tabelaEvolucao[ano][mes] = valorCorrigido;
@@ -34,7 +34,7 @@ public class Questao_60 {
         }
 
         int anoBase = 2007;
-        System.out.println("Anos\tJan\t\tFev\t\tMar\t\tAbr\t\tMai\t\tJun\t\tJul\t\tAgo\t\tSet\t\tOut\t\tNov\t\tDez");
+        System.out.println("Anos\tJan\tFev\tMar\tAbr\tMai\tJun\tJul\tAgo\tSet\tOut\tNov\tDez");
         for (int ano = 0; ano < quantidadeAnos; ano++) {
             System.out.print(anoBase + ano + "\t");
             for (int mes = 0; mes < 12; mes++) {
