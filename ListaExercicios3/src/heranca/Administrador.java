@@ -21,4 +21,9 @@ public class Administrador extends Empregado {
         double salarioCalculado = super.calcularSalario();
         return salarioCalculado + ajudaDeCusto;
     }
+
+    @Override
+    public String toString() {
+        return super.toString() + "\nAjuda de Custo: " + getAjudaDeCusto();
+    }
 }

@@ -40,7 +40,9 @@ public class Pessoa {
 	public void setTelefone(String telefone) {
 		this.telefone = telefone;
 	}
-	
-	
-	
+
+	@Override
+	public String toString() {
+		return "Nome: " + getNome() + "\nEndereço: " + getEndereco() + "\nTelefone: " + getTelefone();
+	}
 }

@@ -45,4 +45,10 @@ public class Empregado extends Pessoa {
     public double calcularSalario() {
         return salarioBase - (salarioBase * (imposto / 100));
     }
+
+    @Override
+    public String toString() {
+        return super.toString() + "\nCódigo Setor: " + getCodigoSetor() + "\nSalário Base: " + getSalarioBase()
+            + "\nImposto: " + getImposto();
+    }
 }
