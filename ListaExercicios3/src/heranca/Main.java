@@ -29,6 +29,13 @@ public class Main {
 		System.out.println("Salário total: " + op.calcularSalario());
 
 		System.out.println("-------------------------");
-	}
+		
+		System.out.println("*** VENDEDOR ***");
+		Vendedor vend = new Vendedor("Andre", "Rio de Janeiro", "(11)2222-1111", 10, 4000.0, 2.0, 3000.0, 5.0);
 
+		System.out.println(vend.toString());
+		System.out.println("Salário total: " + vend.calcularSalario());
+
+		System.out.println("-------------------------");
+	}
 }
